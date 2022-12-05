@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 64px;
+    border-top: 1px solid #b99449;
+    background: whitesmoke;
+    color: rgba(0, 0, 0, 0.87);
+}
+.footer a {
+    color: #b99449;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 400;
+}

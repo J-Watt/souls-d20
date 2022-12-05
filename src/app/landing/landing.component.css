@@ -1,0 +1,54 @@
+.title {
+    width: 100%;
+    height: 320px;
+    background-position: 50% 60px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-image: url("/assets/images/logos/SoulsD20 Title Color.png");
+}
+#mainTitle {
+    width: 100%;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.cards img {
+    width: 320px;
+    height: 320px;
+}
+.cards img {
+    border: 1.5px solid #b99449;
+    border-radius: 3px;
+}
+.cards img::after {
+    border: 1.5px solid #b99449;
+    border-radius: 3px;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    left: 0;
+    margin: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.content {
+    border-top: 1.5px solid #b99449;
+    margin-bottom: 100px;
+    padding-top: 20px;
+}
+.content .cards div {
+    margin: 50px 100px;
+    width: 500px;
+}
+.cards h3 {
+    color: #b99449;
+}
+.cards p {
+    color: whitesmoke;
+}

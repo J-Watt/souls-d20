@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Imperial-BT, Roboto, "Helvetica Neue", sans-serif;
+    background-color: #202020;
+}
+
+@import "~@angular/cdk/overlay-prebuilt.css";
+
+.ks-modal-gallery-backdrop {
+    background: #000 !important;
+    ;
+    opacity: 0.85 !important;
+    ;
+}
+
+.ks-modal-gallery-panel {
+    z-index: 90000 !important;
+}
+
+@font-face {
+    font-family: "EBGaramond";
+    src: url("/assets/fonts/EBGaramond-SemiBold.ttf");
+    src: url("/assets/fonts/ebgaramond-semibold-webfont.woff2") format("woff2"),
+        url("/assets/fonts/ebgaramond-semibold-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: "Mantinia";
+    src: url("/assets/fonts/mantinia-regular.otf");
+    src: url("/assets/fonts/mantinia-regular-webfont.woff2") format("woff2"),
+        url("/assets/fonts/mantinia-regular-webfont.woff") format("woff");
+}
+h1, h2, h3, h4, h5, p {
+    font-family: EBGaramond;
+}
+a {
+    color: #b99449;
+    text-decoration: underline;
+}

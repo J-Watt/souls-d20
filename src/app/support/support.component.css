@@ -1,0 +1,28 @@
+.pageIntro {
+    color: whitesmoke;
+    width: 50%;
+    text-align: center;
+    margin: 20px auto 100px auto;
+}
+.content {
+    border-top: 1.5px solid #b99449;
+    margin-bottom: 100px;
+    padding-top: 120px;
+    text-align: center;
+}
+h2 {
+    color: #b99449;
+    text-align: center;
+}
+h3 {
+    color: whitesmoke;
+    text-align: center;
+}
+p {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 260px;
+}
+img {
+    width: 300px;
+}
