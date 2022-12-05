@@ -1,8 +1,0 @@
-app-header {
-    height: inherit;
-    width: 100%;
-}
-mat-toolbar {
-    position: fixed;
-    /* background-color: #D3D3D3; */
-}
