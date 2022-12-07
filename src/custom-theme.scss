@@ -9,10 +9,35 @@
 // Be sure that you only ever include this mixin once!
 @include mat.core();
 
+$gold-palette: (
+ 50: #fffae7,
+ 100: #fef2c4,
+ 200: #fceb9e,
+ 300: #f9e379,
+ 400: #f6dc5d,
+ 500: #f3d743,
+ 600: #e2c53e,
+ 700: #ceb038,
+ 800: #b99a33,
+ 900: #96752a,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: white,
+   400: white,
+   500: white,
+   600: white,
+   700: white,
+   800: white,
+   900: white,
+ )
+);
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$souls-d20-primary: mat.define-palette(mat.$indigo-palette);
+$souls-d20-primary: mat.define-palette($gold-palette);
 $souls-d20-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).

@@ -1,29 +1,11 @@
-.pageIntro {
-    color: whitesmoke;
-    width: 50%;
-    text-align: center;
-    margin: 20px auto 100px auto;
-}
-.content {
-    border-top: 1.5px solid #b99449;
-    margin-bottom: 100px;
-    padding-top: 120px;
-}
-.discordWidget {
+.discord-widget {
     text-align: center;
 }
 .social {
     text-align: center;
 }
-h2 {
-    color: #b99449;
-    text-align: center;
-}
-h3 {
-    color: whitesmoke;
-    text-align: center;
-}
 p {
-    color: whitesmoke;
+    max-width: 750px;
     text-align: center;
+    margin: 20px auto;
 }

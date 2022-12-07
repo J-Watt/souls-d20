@@ -1,5 +1,5 @@
 .pageIntro {
-    color: whitesmoke;
+    color: var(--gold);
     width: 50%;
     text-align: center;
     margin: 20px auto 100px auto;
@@ -11,8 +11,7 @@
     margin-bottom: 20px;
 }
 .cards img {
-    width: 320px;
-    height: 320px;
+    width: 620px;
 }
 .cards img {
     border: 1.5px solid #b99449;
@@ -31,20 +30,15 @@
     top: 0;
 }
 
-.content {
-    border-top: 1.5px solid #b99449;
-    margin-bottom: 100px;
-    padding-top: 120px;
-}
 .content .cards div {
     margin: 50px 100px;
     width: 500px;
 }
 .cards h3 {
-    color: #b99449;
+    color: var(--gold);
 }
 .cards p {
-    color: whitesmoke;
+    color: var(--white);
 }
 .cards a {
     text-decoration: none;

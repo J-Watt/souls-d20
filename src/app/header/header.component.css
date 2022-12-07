@@ -1,5 +1,6 @@
 #mainHeader {}
 
+/* border-bottom: 1.5px solid #b99933; */
 #mainHeader a {}
 
 #mainHeader nav {
@@ -9,80 +10,36 @@
     margin: 0 20%;
 }
 
+header,
+header nav {
+    height: inherit;
+}
+
 nav a {
-    color: #b99449;
+    background-color: #b99933;
+    background-image: linear-gradient(45deg, #b99933, #cb8c34, #cf7030);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     font-size: 1.6em;
     text-decoration: none;
     font-weight: 600;
     font-family: EBGaramond;
+    border-bottom: 1.5px solid transparent;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-nav a:active {
-    text-decoration: underline;
+.nav-link:hover,
+.nav-link.active {
+    border-bottom: 1.5px solid var(--gold);
+    background-image: linear-gradient(45deg, #cb8c34, #cf7030, #cf7030);
 }
 
 #mainLogo {
-    height: 64px;
-}
-
-.hexagon {
-    top: 30vh;
-    left: 40%;
-    position: absolute;
-    margin: 0 auto;
-
-    /*To Add effect on the background*/
-    background: linear-gradient(to bottom,
-            transparent, #b99449);
-    border-radius: 10px;
-    width: 100px;
-    height: 63px;
-    box-sizing: border-box;
-    /* transition: all 1s; */
-    border: 0.4vh solid transparent;
-    border-top-color: #b99449;
-    border-bottom-color: #b99449;
-}
-
-/*To create pseudo-class */
-.hexagon:before {
-    content: "";
-    border: inherit;
-    position: absolute;
-    top: -0.5vh;
-    left: -0.5vh;
-
-    /*To Add effect on the background*/
-    background: linear-gradient(to left, #b99449, transparent);
-    border-radius: inherit;
-    height: 100%;
-    width: 100%;
-}
-
-.hexagon:after {
-    content: "";
-    border: inherit;
-    position: absolute;
-    top: -0.5vh;
-    left: -0.5vh;
-
-    /*To Add effect on the background*/
-    background: linear-gradient(to left, transparent, #b99449);
-    border-radius: inherit;
-    height: 100%;
-    width: 100%;
-}
-
-/* Align them in such a way
-that they form a hexagon */
-.hexagon:before {
-    transform: rotate(60deg);
-}
-
-.hexagon:after {
-    transform: rotate(-60deg);
+    height: 90px;
+    background-image: radial-gradient(black 40%, transparent 50%);
+    margin-top: 25px;
+    border: none;
 }

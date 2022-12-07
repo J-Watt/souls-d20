@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
     height: 64px;
     border-top: 1px solid #b99449;
     background: whitesmoke;

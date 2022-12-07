@@ -5,10 +5,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import 'hammerjs';
-import 'mousetrap';
-import { GalleryModule } from '@ks89/angular-modal-gallery';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -35,7 +31,6 @@ import { LandingComponent } from './landing/landing.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    GalleryModule,
     AppRoutingModule
   ],
   providers: [],
