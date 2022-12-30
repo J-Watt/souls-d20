@@ -27,7 +27,8 @@ body {
 body {
     margin: 0;
     font-family: EBGaramond, Imperial-BT, Roboto, "Helvetica Neue", sans-serif;
-    background-image: linear-gradient(45deg, #102027, var(--black));
+    background-image: linear-gradient(to right, #102027, var(--black));
+    background-repeat: repeat-y;
 }
 
 h1 {
@@ -37,7 +38,7 @@ h1 {
 }
 
 h2 {
-    color: var(--white);
+    color: var(--gold);
     text-align: center;
     font-size: 2em;
 }
@@ -55,19 +56,41 @@ a {
 p {
     color: var(--white);
     font-size: 1.5em;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: auto 40px 200px 40px;
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        margin: auto 100px 200px 100px;
+    }
 }
 
 .title {
-    width: 100%;
-    height: 200px;
-    padding-top: 120px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+}
+
+.title h1 {
+    color: var(--gold);
+    max-width: 850px;
+    text-align: center;
+    margin: auto auto 0.5em auto;
+}
+
+.title p {
+    max-width: 600px;
+    text-align: center;
+    margin: auto auto 0.5em auto;
 }
 
 .content {
-    width: 100%;
-    margin-bottom: 166px;
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .page-intro {

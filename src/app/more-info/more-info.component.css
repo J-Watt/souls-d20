@@ -1,23 +1,32 @@
-.pageIntro {
-    color: var(--gold);
-    width: 50%;
-    text-align: center;
-    margin: 20px auto 100px auto;
-}
-.cards {
+.preview-download {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
-.cards img {
-    width: 620px;
+
+.preview-download img {
+    width: 324px;
 }
-.cards img {
+
+@media only screen and (min-width: 768px) {
+    .preview-download img {
+        width: 486px;
+        margin-left: 60px;
+    }
+
+    .preview-download div {
+        max-width: 500px;
+    }
+}
+
+.preview-download img {
     border: 1.5px solid #b99449;
     border-radius: 3px;
 }
-.cards img::after {
+
+/* .preview-cover::after {
     border: 1.5px solid #b99449;
     border-radius: 3px;
     bottom: 0;
@@ -28,18 +37,123 @@
     position: absolute;
     right: 0;
     top: 0;
+} */
+
+.preview-download h2 {
+    text-align: left;
 }
 
-.content .cards div {
-    margin: 50px 100px;
-    width: 500px;
+.preview-download h3 {
+    margin-top: 80px;
 }
-.cards h3 {
-    color: var(--gold);
+
+.book-preview {
+    position: relative;
+    flex-grow: 1;
+    height: 340px;
+    margin: 20px;
 }
-.cards p {
-    color: var(--white);
+
+.book-preview h3 {
+    background-color: #102027;
+    border: 1.5px solid var(--gold);
+    border-radius: 2px;
+    position: absolute;
+    margin: 0px;
+    top: -20px;
+    left: 80px;
+    z-index: 6;
+    padding: 5px 10px;
 }
-.cards a {
-    text-decoration: none;
+
+.book-preview p {
+    background-color: #102027;
+    border: 1.5px solid var(--gold);
+    border-radius: 2px;
+    position: absolute;
+    display: inline-block;
+    margin: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 6;
+    padding: 5px 10px;
+    width: 600px;
+}
+
+.preview {
+    position: absolute;
+    /* top: 145px;
+    left: 120px; */
+    width: 810px;
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#previewPage1 {
+    background-image: url("https://j-watt.github.io/souls-d20/assets/images/artwork/WPNProfs_Page1.png");
+    background-position: 65px -180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    height: 730px;
+}
+#previewPage2 {
+    background-image: url("https://j-watt.github.io/souls-d20/assets/images/artwork/Spells_Page2.png");
+    background-position: 65px -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    height: 730px;
+}
+#previewPage3 {
+    background-image: url("https://j-watt.github.io/souls-d20/assets/images/artwork/WPNSkills_Page1.png");
+    background-position: 65px -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    height: 730px;
+}
+
+.mini-pages {
+    list-style: none;
+    display: block;
+    position: relative;
+    margin: 0;
+    top: -90px;
+    left: -10px;
+}
+
+.mini-page {
+    overflow: hidden;
+    position: absolute;
+}
+
+.mini-page:nth-child(1) {
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.mini-page:nth-child(2) {
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+}
+
+.mini-page:nth-child(3) {
+    left: 20px;
+    top: 20px;
+    z-index: 3;
+}
+
+.mini-page div {
+    background-image: url("https://j-watt.github.io/souls-d20/assets/images/artwork/WPNProfs_Page1.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 115px;
+    height: 155px;
+    border: 1.5px solid var(--gold);
+    filter: blur(1px);
 }

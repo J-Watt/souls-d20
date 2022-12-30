@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
@@ -31,6 +33,8 @@ import { LandingComponent } from './landing/landing.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
+    MatTabsModule,
+    MatBottomSheetModule,
     AppRoutingModule
   ],
   providers: [],

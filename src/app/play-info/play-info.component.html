@@ -2,8 +2,6 @@
     <h1>Join a game as a player now, or have a game run for you and a group of friends!</h1>
     <p>Join the discord community to discuss the system and currently running games,
         or contact us directly at <a target="_blank" href="mailto:vgtimis133@gmail.com">vgtimis133@gmail.com</a>.</p>
-</div>
-<div class="content">
     <div class="social">
         <a mat-icon-button color="primary" target="_blank"
             href="https://discord.com/channels/567897304908955649/1021927716750098482">
@@ -13,11 +11,92 @@
             <i class="fa-solid fa-envelope"></i>
         </a>
     </div>
-    <p>To join or organize a game, 
+</div>
+<div class="content">
+    <h2>Currently running campaigns:</h2>
+    <p>Play alongside multiple other groups in a fully realized and living world made specifically
+        by the author of Souls d20</p>
+    <mat-tab-group>
+        <mat-tab label="Frozen Warriors">
+            <div class="campaign">
+                <img src="assets/images/maps/DS 600 A.C.W (Cormia, Zoomed).jpg">
+                <span>
+                    <h3>The Frozen Warriors Festival (one shot session)</h3>
+                    <p>The city of Olafis sits in an arid land dotted with tall mesas and spires of rock. The city
+                        itself is build tall into these structure and ruled over by one of the ancient Nightbirds of the
+                        dark ages. As a gateway between the desert empire of Erume and the rest of the continent or
+                        Archea, Olafis has been an important center of trade and travel. To celebrate this, a warriors
+                        festival is thrown where outsiders may test their strength and fighting styles against the best
+                        of Olafis. It is a tough but honorable battle, meant to bring glory to those involved. But now,
+                        the city of Olafis stands on the brink of ruin. The frost dragon Acire along with a few thousand
+                        soldiers from the north swept through and took the city for themselves, amidst a war between
+                        north and south. Twisted to be a symbol of oppression, the warriors festival is now a way to get
+                        rid of prisoners and those who stand against the invaders. You and your group find yourselves
+                        trapped in this torturous colosseum, seeking freedom or even revenge.</p>
+                </span>
+
+            </div>
+        </mat-tab>
+        <mat-tab label="Tomb Prospectors">
+            <div class="campaign">
+                <img src="assets/images/maps/DS 600 A.C.W Alvina.png">
+                <span>
+                    <h3>Tales of the Tomb Prospectors (short campaign)</h3>
+                    <p>East of the kingdom of Yhelcain stands the beautiful city of Alvina. Trapped in perpetual autumn
+                        and
+                        built into the massive golden leaved trees. Alvina is home to a guild of adventurers tasked with
+                        delving deep into the southern ruins of Lethrell, which fell generations ago to unspeakable
+                        horrors. The ruins of Lethrell are home to powerful artifacts and magic items, some of which are
+                        to
+                        powerful
+                        to pass up or too dangerous to leave in the hands of others. Take your group of Tomb Prospector
+                        initiates and delve into the catacombs and dungeons of the ruins, and either come back rich with
+                        a
+                        haul of twisted treasures, or be driven mad at what you witness below.</p>
+                </span>
+
+            </div>
+        </mat-tab>
+        <mat-tab label="Erume Privateers">
+            <div class="campaign">
+                <img src="assets/images/maps/DS 600 A.C.W (Cormia, Zoomed).jpg">
+                <span>
+                    <h3>The last Privateers of Erume (short campaign)</h3>
+                    <p>For the last decade or so, the great western ocean of Sarda Cen has been off limits to almost all
+                        travel. Entire fleets of ships go missing, with not even a single surviving soul to tell the
+                        tale of
+                        what happened. But amidst the chaos of war with the north, one last ship has been secretly
+                        commissioned to embark from the port of the golden capitol of the empire of Erume. Crewed with
+                        mercenaries and sailors that are mad enough for the journey, and tasked with discovering any
+                        glimpse
+                        of hope for reopening the waters or turning the tide of war, the last ship must sail on cursed
+                        waters and search for answers. Being part of this ship your group must stick together and brave
+                        the
+                        anomalous and mind melting journey with only each other, and those aboard that remain sane
+                        enough to
+                        rely on.</p>
+                </span>
+
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+
+
+    <div *ngFor="let testimony of testimonials" class="testimonial">
+        <p class="testimonial-quote">{{testimony.quote}}</p>
+        <p class="testimonial-name">- {{testimony.name}}</p>
+        <div class="testimonial-icon"
+            style="background-image: url('/assets/images/artwork/races/soulsd20-race-symbols-{{testimony.icon}}.png');">
+        </div>
+        <span></span>
+    </div>
+
+
+    <p>To join or organize a game,
         and for pricing info contact <a target="_blank" href="mailto:vgtimis133@gmail.com">vgtimis133@gmail.com</a></p>
     <div class="discord-widget">
-        <iframe src="https://discord.com/widget?id=567897304908955649&theme=dark" width="350" height="500" 
-        allowtransparency="true" frameborder="0" 
-        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        <iframe src="https://discord.com/widget?id=567897304908955649&theme=dark" width="350" height="500"
+            allowtransparency="true" frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </div>
 </div>
