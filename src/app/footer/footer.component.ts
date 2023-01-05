@@ -10,16 +10,16 @@ export class FooterComponent {
   constructor(private _bottomSheet: MatBottomSheet) {}
 
   openBottomSheet(): void {
-    this._bottomSheet.open(BottomSheetArtist);
+    this._bottomSheet.open(BottomSheetFooter);
   }
 }
 
 @Component({
-  selector: 'bottom-sheet-artist',
-  templateUrl: './bottom-sheet-artist.html',
+  selector: 'bottom-sheet-footer',
+  templateUrl: './bottom-sheet-footer.html',
 })
-export class BottomSheetArtist {
-  constructor(private _bottomSheetRef: MatBottomSheetRef<BottomSheetArtist>) {}
+export class BottomSheetFooter {
+  constructor(private _bottomSheetRef: MatBottomSheetRef<BottomSheetFooter>) {}
 
   openLink(event: MouseEvent): void {
     this._bottomSheetRef.dismiss();
