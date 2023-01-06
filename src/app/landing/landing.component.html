@@ -3,37 +3,56 @@
 </div>
 
 <div class="content">
-    <div class="cards">
-        <img src="assets/images/artwork/Twinblade F WEB.png">
-        <div class="lefty">
-            <h3>Kill your friends!</h3>
-            <p>A full-system table top roll playing experience inspired by the Elden Ring and Soulsborne games</p>
-        </div>
-    </div>
-    <div class="cards">
-        <div class="righty">
-            <h3>Kill your friends!</h3>
-            <p>like the games it is inspired by, Souls d20 encourages gameplay where players learn the behavior
-                of adversaries over the course of fights in order to dodge out of the way of attacks and counter
-                with their own attacks and skills.</p>
-        </div>
-        <img src="assets/images/maps/DS 600 A.C.W (Cormia, Zoomed).jpg">
-    </div>
-    <div class="cards">
-        <img src="assets/images/artwork/WPNProfs_Page1.png">
-        <div class="lefty">
-            <h3>Kill your friends!</h3>
-            <p>Capture the feeling of building your character into a unique class of your own creation.
-                As players level up, they invest into weapon "proficiency trees" based on 21 weapon types.
-                Mixing and synergizing the abilities and skills gained from any number of the different trees
-                as they level.</p>
-        </div>
-    </div>
-    <div class="cards">
-        <div class="righty">
-            <h3>Kill your friends!</h3>
-            <p>So many regrets to have!</p>
-        </div>
-        <img src="assets/images/artwork/Hex F WEB.png">
-    </div>
+    <mat-tab-group>
+        <mat-tab label="Rule Book">
+            <div class="campaign">
+                <img src="assets/images/artwork/SoulsD20 Cover FINAL 72dpi.png">
+                <img src="assets/images/artwork/Weapons_Page1.png">
+                <span>
+                    <h3>A full-system table top roll playing experience</h3>
+                    <p>A comprehensive and rules heavy system, that can be picked up easily by beginners and experienced
+                        players alike.</p>
+                    <a mat-raised-button color="primary" routerLink="/info">Preview Available</a>
+                </span>
+
+            </div>
+        </mat-tab>
+        <mat-tab label="Combat">
+            <div class="campaign">
+                <img src="assets/images/artwork/Reaper F WEB.png">
+                <img src="assets/images/artwork/Shield F WEB.png">
+                <span>
+                    <h3>A combat style which encourages learning and countering adversaries</h3>
+                    <p>like the games it is inspired by, Souls d20 encourages gameplay where players learn the behavior
+                        of adversaries over the course of fights in order to dodge out of the way of attacks and counter
+                        with their own attacks and skills.</p>
+                    <a mat-raised-button color="primary" routerLink="/info">More Info</a>
+                </span>
+
+            </div>
+        </mat-tab>
+        <mat-tab label="Builds">
+            <div class="campaign">
+                <img src="assets/images/artwork/races/soulsd20-race-symbols-all-with-labels.png">
+                <span>
+                    <h3>Build characters into a unique class of your own making</h3>
+                    <p>Capture the feeling of building your character into a unique class of your own creation. As
+                        players level up, they invest into weapon "proficiency trees" based on 21 weapon types. Mixing
+                        and synergizing the abilities and skills gained from any number of the different trees as they
+                        level.</p>
+                    <a mat-raised-button color="primary" routerLink="/info">More Info</a>
+                </span>
+
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <h2>Start your adventure now, and play in a living world five years in the making.</h2>
+    <p style="max-width: 500px;">Play in a team, alongside multiple other teams of players and game masters, where your actions change
+        the world and their experiences.</p>
+    <a mat-raised-button color="primary" routerLink="/play">Play</a>
+</div>
+    
+
 </div>

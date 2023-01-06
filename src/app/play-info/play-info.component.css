@@ -12,6 +12,26 @@ p {
     margin: 20px auto;
 }
 
+.section {
+    height: 190px;
+    background-color: #86452f;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.section-content h2 {
+    color: var(--white);
+}
+
 .campaign {
     display: flex;
     flex-direction: column;
@@ -43,8 +63,7 @@ p {
 }
 
 mat-tab-group {
-    margin-bottom: 100px;
-    margin-top: 30px;
+    margin: 30px auto 100px auto;
 }
 
 .testimonial {

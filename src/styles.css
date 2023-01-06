@@ -92,3 +92,7 @@ p {
     display: flex;
     flex-direction: column;
 }
+
+.mdc-tab__text-label {
+    color: var(--gold) !important;
+}

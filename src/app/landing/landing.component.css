@@ -7,22 +7,85 @@
     background-image: url("https://j-watt.github.io/souls-d20/assets/images/logos/SoulsD20 Title Color.png");
     margin: 0;
 }
+
 .container {
     padding: 0;
 }
+
 .content {
     border-top: 1.5px solid var(--gold);
-    padding-top: 50px;
+    padding-top: 16px;
 }
+
 #mainTitle {
     width: 100%;
 }
+
+
+.campaign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .campaign {
+        flex-direction: row;
+    }
+}
+
+.campaign img {
+    /* width: 320px; */
+    height: 320px;
+    border: 1.5px solid #b99449;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.campaign span {
+    margin-left: 60px;
+}
+
+.campaign p {
+    font-size: 1rem;
+    max-width: 500px;
+}
+
+.campaign h3 {
+    max-width: 500px;
+}
+
+mat-tab-group {
+    margin: 30px auto 100px auto;
+}
+
+.section {
+    height: 300px;
+    /* background-image: linear-gradient(to bottom, transparent 10%, red 80%, transparent 10%); */
+    background-color: #86452f;
+    /* background-color: #B95633; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
+
 .cards img {
     width: 320px;
     height: 320px;
@@ -48,9 +111,11 @@
     margin: 50px 100px;
     width: 500px;
 }
+
 .cards h3 {
     color: #b99449;
 }
+
 .cards p {
     color: whitesmoke;
 }
