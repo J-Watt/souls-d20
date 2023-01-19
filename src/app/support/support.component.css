@@ -7,13 +7,59 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    border-bottom: 1.5px solid #b99449;
+    margin-bottom: 160px;
 }
 
 .donations {
     max-width: 500px;
+    margin-right: 60px;
 }
 
-img {
+.paypal img {
     width: 300px;
     height: fit-content;
+}
+
+#paypal-donate-button-container {
+    height: 100px;
+    width: 100px;
+    margin: 20px auto;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.about-us img {
+    width: 600px;
+    position: relative;
+    left: -160px;
+    bottom: 80px;
+}
+
+.about-us p {
+    display: inline-block;
+    max-width: 600px;
+}
+
+.img-wrapper {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    overflow: hidden;
+    border: 1.5px solid #b99449;
+    border-radius: 3px;
+    margin: 0 60px;
 }

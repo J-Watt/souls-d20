@@ -9,7 +9,62 @@
             <h3>Donations</h3>
             <p>Donations will help fund more great art and any further design for the book!</p>
         </span>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1200px-PayPal.svg.png">
+
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1200px-PayPal.svg.png">
+            <div id="paypal-donate-button-container">
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="business" value="5FGGMENPSR3LU" />
+                    <input type="hidden" name="no_recurring" value="0" />
+                    <input type="hidden" name="item_name"
+                        value="Donations and payments are put toward more content like book materials, a monster manual, character sheets, and more!" />
+                    <input type="hidden" name="currency_code" value="USD" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"
+                        name="submit" title="PayPal - The safer, easier way to pay online!"
+                        alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+            </div>
+            <script>
+                PayPal.Donation.Button({
+                    env: 'production',
+                    hosted_button_id: '5FGGMENPSR3LU',
+                    // business: 'YOUR_EMAIL_OR_PAYERID',
+                    image: {
+                        src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                        title: 'PayPal - The safer, easier way to pay online!',
+                        alt: 'Donate with PayPal button'
+                    },
+                    onComplete: function (params) {
+                        // Your onComplete handler
+                    },
+                }).render('#paypal-donate-button-container');
+            </script>
+        </div>
     </div>
-    
+
+    <div class="about-us">
+        <div>
+            <div class="img-wrapper">
+                <img src="assets/images/humans/humans-0.jpg">
+            </div>
+            <p>Souls D20 started as a fun and chaotic side project between a small group of friends. After playing and
+                having fun with it for more than a year we decided to expand the book and add new players. Five years
+                later the book has gone through countless patches and multiple massive updates! Now we have the game
+                being played and tested by more than ten testers which have played thousands of hours of campaigns!</p>
+        </div>
+        <div>
+            <p>The growing souls D20 team includes passionate contributors dedicated to curating the rulebook, building
+                online tools to make play easier, creating incredible artwork, and growing our discord community! We're
+                always excited to include new players to the Souls D20 experience so come and ask questions if you are
+                looking to learn more! We will happily guide you in how to build characters, learn the rules and get
+                playing! </p>
+            <div class="img-wrapper">
+                <img src="assets/images/humans/humans-1.jpg">
+            </div>
+        </div>
+
+    </div>
+
+
 </div>

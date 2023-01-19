@@ -1,5 +1,6 @@
 <div class="title">
-    <h1>Join a game as a player now, or have a game run for you and a group of friends!</h1>
+    <h1>Join a game as a player now, or have a game run for you and <span matTooltip="Kill your friends!"
+            style="margin: 0;">a group of friends!</span></h1>
     <p>Join the discord community to discuss the system and currently running games,
         or contact us directly at <a target="_blank" href="mailto:vgtimis133@gmail.com">vgtimis133@gmail.com</a>.</p>
     <div class="social">
@@ -25,27 +26,25 @@
     <mat-tab-group>
         <mat-tab label="Frozen Warriors">
             <div class="campaign">
-                <img src="assets/images/maps/DS 600 A.C.W (Cormia, Zoomed).jpg">
+                <img src="assets/images/maps/DS 600 A.C.W Olafis (Cropped).png">
                 <span>
                     <h3>The Frozen Warriors Festival (one shot session)</h3>
-                    <p>The city of Olafis sits in an arid land dotted with tall mesas and spires of rock. The city
-                        itself is build tall into these structure and ruled over by one of the ancient Nightbirds of the
-                        dark ages. As a gateway between the desert empire of Erume and the rest of the continent or
-                        Archea, Olafis has been an important center of trade and travel. To celebrate this, a warriors
-                        festival is thrown where outsiders may test their strength and fighting styles against the best
-                        of Olafis. It is a tough but honorable battle, meant to bring glory to those involved. But now,
-                        the city of Olafis stands on the brink of ruin. The frost dragon Acire along with a few thousand
-                        soldiers from the north swept through and took the city for themselves, amidst a war between
-                        north and south. Twisted to be a symbol of oppression, the warriors festival is now a way to get
-                        rid of prisoners and those who stand against the invaders. You and your group find yourselves
-                        trapped in this torturous colosseum, seeking freedom or even revenge.</p>
+                    <p>The city of Olafis sits in an arid land dotted with tall mesas and spires of rock. As a gateway
+                        between the desert empire of Erume and the rest of the continent of Archea, Olafis has been an
+                        important center of trade and travel. To celebrate this, a warriors festival is thrown where
+                        outsiders may test their strength and fighting styles against the best of the city. But now,
+                        Olafis stands on the brink of ruin. The frost dragon Acire along with a few thousand soldiers
+                        from the north swept through and took the city for themselves. Twisted to be a symbol of
+                        oppression, the warriors festival is now a way to get rid of prisoners and those who stand
+                        against the invaders. You and your group find yourselves trapped in this torturous colosseum,
+                        seeking freedom or even revenge.</p>
                 </span>
 
             </div>
         </mat-tab>
         <mat-tab label="Tomb Prospectors">
             <div class="campaign">
-                <img src="assets/images/maps/DS 600 A.C.W Alvina.png">
+                <img src="assets/images/maps/DS 600 A.C.W Alvina (Cropped).png">
                 <span>
                     <h3>Tales of the Tomb Prospectors (short campaign)</h3>
                     <p>East of the kingdom of Yhelcain stands the beautiful city of Alvina. Trapped in perpetual autumn
@@ -65,7 +64,7 @@
         </mat-tab>
         <mat-tab label="Erume Privateers">
             <div class="campaign">
-                <img src="assets/images/maps/DS 600 A.C.W (Cormia, Zoomed).jpg">
+                <img src="assets/images/maps/DS 600 A.C.W Erume (Cropped).png">
                 <span>
                     <h3>The last Privateers of Erume (short campaign)</h3>
                     <p>For the last decade or so, the great western ocean of Sarda Cen has been off limits to almost all
@@ -87,16 +86,37 @@
         </mat-tab>
     </mat-tab-group>
 
-
-    <div *ngFor="let testimony of testimonials" class="testimonial">
-        <p class="testimonial-quote">{{testimony.quote}}</p>
-        <p class="testimonial-name">- {{testimony.name}}</p>
-        <div class="testimonial-icon"
-            style="background-image: url('https://j-watt.github.io/souls-d20/assets/images/artwork/races/soulsd20-race-symbols-{{testimony.icon}}.png');">
+    <div>
+        <div class="section-left">
+            <div class="testimonial-play">
+                <h3>TO PLAY NOW</h3>
+                <p style="text-align: left; margin: 0;">Email <a style="text-decoration: underline;" target="_blank"
+                        href="mailto:vgtimis133@gmail.com">here</a>
+                    or join the <a style="text-decoration: underline;" target="_blank"
+                        href="https://discord.gg/UnEKqTx">discord</a> and message us!<br><br>Some info you may include
+                    to
+                    help
+                    us organize a campaign for you:</p>
+                <ul style="color: var(--white);">
+                    <li>Group size, bring friends or join solo!</li>
+                    <li>Type of campaign</li>
+                    <li>Time commitment & preferred campaign length</li>
+                </ul>
+            </div>
         </div>
-        <span></span>
     </div>
 
+
+    <div class="testimonial-container">
+        <div *ngFor="let testimony of testimonials" class="testimonial">
+            <p class="testimonial-quote">{{testimony.quote}}</p>
+            <p class="testimonial-name">- {{testimony.name}}</p>
+            <div class="testimonial-icon"
+                style="background-image: url('https://j-watt.github.io/souls-d20/assets/images/artwork/races/soulsd20-race-symbols-{{testimony.icon}}.png');">
+            </div>
+            <span></span>
+        </div>
+    </div>
 
     <p>To join or organize a game,
         and for pricing info contact <a target="_blank" href="mailto:vgtimis133@gmail.com">vgtimis133@gmail.com</a></p>

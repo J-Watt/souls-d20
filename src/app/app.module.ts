@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -34,6 +35,7 @@ import { LandingComponent } from './landing/landing.component';
     MatToolbarModule,
     MatButtonModule,
     MatTabsModule,
+    MatTooltipModule,
     MatBottomSheetModule,
     AppRoutingModule
   ],
