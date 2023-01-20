@@ -81,7 +81,7 @@ p {
 }
 
 #previewPage1 {
-    background-image: url("https://j-watt.github.io/souls-d20/assets/images/artwork/WPNProfs_Page1.png");
+    background-image: url("/assets/images/artwork/WPNProfs_Page1.png");
     background-position: 65px -180px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,7 +90,7 @@ p {
 }
 
 #previewPage2 {
-    background-image: url("https://j-watt.github.io/souls-d20/assets/images/artwork/Spells_Page2.png");
+    background-image: url("/assets/images/artwork/Spells_Page2.png");
     background-position: 65px -100px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,7 +99,7 @@ p {
 }
 
 #previewPage3 {
-    background-image: url("https://j-watt.github.io/souls-d20/assets/images/artwork/WPNSkills_Page1.png");
+    background-image: url("/assets/images/artwork/WPNSkills_Page1.png");
     background-position: 65px -100px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -140,7 +140,7 @@ p {
 }
 
 .mini-page div {
-    background-image: url("https://j-watt.github.io/souls-d20/assets/images/artwork/WPNProfs_Page1.png");
+    background-image: url("/assets/images/artwork/WPNProfs_Page1.png");
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;

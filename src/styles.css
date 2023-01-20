@@ -9,7 +9,7 @@
     font-family: "EBGaramond";
     src: url("/assets/fonts/EBGaramond-SemiBold.ttf");
     src: url("/assets/fonts/ebgaramond-semibold-webfont.woff2") format("woff2"),
-        url("https://j-watt.github.io/souls-d20/assets/fonts/ebgaramond-semibold-webfont.woff2") format("woff2"),
+        url("/souls-d20/assets/fonts/ebgaramond-semibold-webfont.woff2") format("woff2"),
         url("/assets/fonts/ebgaramond-semibold-webfont.woff") format("woff");
 }
 
