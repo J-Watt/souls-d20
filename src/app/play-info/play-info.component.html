@@ -84,8 +84,8 @@
         <div class="section-left">
             <div class="testimonial-play">
                 <h3>TO PLAY NOW</h3>
-                <p style="text-align: left; margin: 0;">Email <a style="text-decoration: underline;" target="_blank"
-                        href="mailto:vgtimis133@gmail.com">here</a>
+                <p style="text-align: left; margin: 0;">Simply signup using our form below! <br> Alternatively, email <a
+                        style="text-decoration: underline;" target="_blank" href="mailto:vgtimis133@gmail.com">here</a>
                     or join the <a style="text-decoration: underline;" target="_blank"
                         href="https://discord.gg/UnEKqTx">discord</a> and message us!<br><br>Some info you may include
                     to
@@ -100,17 +100,25 @@
         </div>
     </div>
 
+    <div class="testimonials-signup">
+        <div class="signup-form">
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdXHLK0d2FiV-dHzOBM0UGb86b71q00ODRWEO1dFF_Mi3HGqg/viewform?embedded=true"
+                width="640" height="528" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
 
-    <div class="testimonial-container">
-        <div *ngFor="let testimony of testimonials" class="testimonial">
-            <p class="testimonial-quote">{{testimony.quote}}</p>
-            <p class="testimonial-name">- {{testimony.name}}</p>
-            <div class="testimonial-icon"
-                style="background-image: url('https://j-watt.github.io/souls-d20/assets/images/artwork/races/soulsd20-race-symbols-{{testimony.icon}}.png');">
+        <div class="testimonial-container">
+            <div *ngFor="let testimony of testimonials" class="testimonial">
+                <p class="testimonial-quote">{{testimony.quote}}</p>
+                <p class="testimonial-name">- {{testimony.name}}</p>
+                <div class="testimonial-icon"
+                    style="background-image: url('https://j-watt.github.io/souls-d20/assets/images/artwork/races/soulsd20-race-symbols-{{testimony.icon}}.png');">
+                </div>
+                <span></span>
             </div>
-            <span></span>
         </div>
     </div>
+
 
     <p>To join or organize a game,
         and for pricing info contact <a target="_blank" href="mailto:vgtimis133@gmail.com">vgtimis133@gmail.com</a></p>
