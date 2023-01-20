@@ -50,7 +50,6 @@ p {
 @media only screen and (min-width: 992px) {
     .section-left {
         width: 35%;
-        z-index: -1;
         position: absolute;
         left: 0;
     }
