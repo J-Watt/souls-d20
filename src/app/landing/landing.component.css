@@ -37,7 +37,6 @@
 }
 
 .campaign img {
-    /* width: 320px; */
     height: 320px;
     border: 1.5px solid #b99449;
     border-radius: 3px;
@@ -63,9 +62,7 @@ mat-tab-group {
 
 .section {
     height: 300px;
-    /* background-image: linear-gradient(to bottom, transparent 10%, red 80%, transparent 10%); */
     background-color: #86452f;
-    /* background-color: #B95633; */
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;

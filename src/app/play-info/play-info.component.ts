@@ -51,9 +51,4 @@ export class PlayInfoComponent {
     }
   ];
 
-  // testimonials = [];
-
-  // ngOnInit() {
-  //   Math.floor(Math.random() * (this.allTestimonials.length));
-  // }
 }
