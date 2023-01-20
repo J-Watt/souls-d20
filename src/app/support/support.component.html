@@ -1,7 +1,7 @@
 <div class="title">
     <h1>Support Souls D20</h1>
     <p>Look forward to more content like book materials, a monster manual, character sheets,
-        a patreon with exclusive rewards and more!</p>
+        a patreon with exclusive rewards and more.</p>
 </div>
 <div class="content">
     <div class="paypal">
@@ -50,20 +50,29 @@
             </div>
             <p>Souls D20 started as a fun and chaotic side project between a small group of friends. After playing and
                 having fun with it for more than a year we decided to expand the book and add new players. Five years
-                later the book has gone through countless patches and multiple massive updates! Now we have the game
-                being played and tested by more than ten testers which have played thousands of hours of campaigns!</p>
+                later the book has gone through countless patches and multiple massive updates. Now we have the game
+                being played and tested by more than ten testers which have played thousands of hours of campaigns.</p>
         </div>
         <div>
-            <p>The growing souls D20 team includes passionate contributors dedicated to curating the rulebook, building
-                online tools to make play easier, creating incredible artwork, and growing our discord community! We're
+            <p>The growing Souls D20 team includes passionate contributors dedicated to curating the rulebook, building
+                online tools to make play easier, creating incredible artwork, and growing our discord community. We're
                 always excited to include new players to the Souls D20 experience so come and ask questions if you are
                 looking to learn more! We will happily guide you in how to build characters, learn the rules and get
-                playing! </p>
+                playing. </p>
             <div class="img-wrapper">
                 <img src="assets/images/humans/humans-1.jpg">
             </div>
         </div>
 
     </div>
-
+    <div class="testimonial-container">
+        <div *ngFor="let testimony of testimonials" class="testimonial">
+            <p class="testimonial-quote">{{testimony.quote}}</p>
+            <p class="testimonial-name">- {{testimony.name}}</p>
+            <div class="testimonial-icon"
+                style="background-image: url('https://j-watt.github.io/souls-d20/assets/images/artwork/races/soulsd20-race-symbols-{{testimony.icon}}.png');">
+            </div>
+            <span></span>
+        </div>
+    </div>
 </div>
