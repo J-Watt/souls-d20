@@ -1,9 +1,20 @@
 <header id="mainHeader">
+    <div id="mobileMenu">
+        <button mat-button [matMenuTriggerFor]="menu"><i class="fa-solid fa-bars fa-xl"></i></button>
+        <mat-menu #menu="matMenu">
+            <button routerLink="" mat-menu-item>Home</button>
+            <button routerLink="/info" mat-menu-item>Info</button>
+            <button routerLink="/play" mat-menu-item>Play</button>
+            <button routerLink="/support" mat-menu-item>Support</button>
+            <button routerLink="/contact" mat-menu-item>Contact</button>
+        </mat-menu>
+    </div>
+    
     <nav>
         <a routerLink="/info" routerLinkActive="active" class="nav-link">Info</a>
         <a routerLink="/play" routerLinkActive="active" class="nav-link">Play</a>
         <a routerLink="">
-            <img id="mainLogo" src="assets/images/logos/SoulsD20 LOGO Color.png">
+            <img class="main-logo" src="assets/images/logos/SoulsD20 LOGO Color.png">
         </a>
         <a routerLink="/support" routerLinkActive="active" class="nav-link">Support</a>
         <a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact</a>

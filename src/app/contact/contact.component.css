@@ -1,6 +1,7 @@
 .discord {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 p {
@@ -9,4 +10,8 @@ p {
 
 .social {
     text-align: center;
+}
+
+.content {
+    margin-bottom: 308px;
 }

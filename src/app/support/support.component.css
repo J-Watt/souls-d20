@@ -6,6 +6,7 @@
 
 .paypal {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     border-bottom: 1.5px solid #b99449;
@@ -14,7 +15,6 @@
 
 .donations {
     max-width: 500px;
-    margin-right: 60px;
 }
 
 .paypal img {

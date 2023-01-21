@@ -62,7 +62,7 @@ p {
 }
 
 .container {
-    margin: auto 40px 200px 40px;
+    margin: auto 20px 200px 20px;
 }
 
 @media only screen and (min-width: 600px) {

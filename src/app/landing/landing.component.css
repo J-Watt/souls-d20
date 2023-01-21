@@ -1,11 +1,24 @@
 .title {
-    height: 200px;
+    height: 100px;
     background-position: 50% 60px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 800px;
+    background-size: 65%;
     background-image: url("/assets/images/logos/SoulsD20 Title Color.png");
     margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .title {
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .title {
+        height: 200px;
+        background-size: 800px;
+    }
 }
 
 .container {
