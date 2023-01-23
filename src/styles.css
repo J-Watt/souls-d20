@@ -94,6 +94,8 @@ p {
     flex-direction: column;
 }
 
-.mdc-tab__text-label {
+.mdc-tab__text-label,
+.mat-mdc-tab-header-pagination-chevron {
     color: var(--gold) !important;
+    border-color: unset;
 }

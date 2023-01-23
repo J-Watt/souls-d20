@@ -163,6 +163,7 @@ p {
 .section-content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -193,4 +194,46 @@ p {
     display: inline-block;
     margin: 8px;
     top: -20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .book-preview {
+        width: 100%;
+    }
+
+    .book-preview p {
+        width: 98%;
+    }
+
+    .preview,
+    #previewPage1,
+    #previewPage2,
+    #previewPage3 {
+        width: inherit;
+        background-size: contain;
+        background-position: 0 20px;
+    }
+
+    .section {
+        height: 220px;
+    }
+
+    .section-blurbs {
+        order: 2;
+    }
+
+    .section img {
+        order: 1;
+        height: 200px;
+    }
+
+    .mini-pages {
+        top: -50px;
+        left: 20px;
+    }
+
+    .mini-page div {
+        width: 60px;
+        height: 75px;
+    }
 }

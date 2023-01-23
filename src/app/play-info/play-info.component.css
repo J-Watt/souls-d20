@@ -30,18 +30,29 @@ p {
 
 .section-content h2 {
     color: var(--white);
+    margin-bottom: 0;
+}
+
+.section-content p {
+    font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .section-content h2 {
+        margin-bottom: 20;
+    }
+
+    .section-content p {
+        font-size: 1.5rem;
+    }
 }
 
 .section-left {
     position: relative;
-    left: -100px;
     margin-bottom: 60px;
-    padding: 20px 20px 20px 100px;
-    border-top: 1.5px solid #b99449;
-    border-right: 1.5px solid #b99449;
-    border-bottom: 1.5px solid #b99449;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    padding: 20px 20px 20px 20px;
+    border: 1.5px solid #b99449;
+    border-radius: 3px;
     background-color: #86452f;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,12 +74,6 @@ p {
     margin: 10px 0;
 }
 
-@media only screen and (min-width: 768px) {
-    .campaign {
-        flex-direction: row;
-    }
-}
-
 .campaign img {
     width: 320px;
     height: 293px;
@@ -77,7 +82,30 @@ p {
 }
 
 .campaign span {
-    margin-left: 60px;
+    margin-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .campaign {
+        flex-direction: row;
+    }
+
+    .campaign span {
+        margin-left: 60px;
+    }
+
+    .section-left {
+        left: -100px;
+        padding: 20px 20px 20px 100px;
+        border-left: 1.5px solid #b99449;
+        border-right: 1.5px solid #b99449;
+        border-bottom: 1.5px solid #b99449;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        background-color: #86452f;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .campaign p {
@@ -179,10 +207,25 @@ mat-tab-group {
 
 .signup-form {
     position: relative;
-    top: 450px;
-    margin: 0 60px 320px 0;
+    margin: 0 0 120px 0;
 }
 
 .signup-form iframe {
     height: 1700px;
+}
+
+@media only screen and (min-width: 992px) {
+    .signup-form {
+        top: 450px;
+        margin: 0 60px 320px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .signup-form {
+        width: 100%;
+    }
+    .signup-form iframe {
+        width: inherit;
+    }
 }
