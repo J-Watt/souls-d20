@@ -82,6 +82,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .testimonial-icon::before {
@@ -135,4 +136,14 @@
     margin: 0 0 20px 0;
     color: #9e9e9e;
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .img-wrapper {
+        margin: 0 auto 60px auto;
+    }
+    .about-us p {
+        margin: 20px auto;
+        text-align: center;
+    }
 }
